@@ -56,22 +56,17 @@ All of the following are implemented in this repository:
 
 ## Installation
 
-No tagged releases exist yet, so install a specific commit rather than a version:
-
-```sh
-go get github.com/MahdiPezeshkian/Onyx.Data@main
-```
-
-Because `main` intentionally contains only this README, fetch the code from
-`develop` while the project is pre-release:
+No tagged releases exist yet, and the `main` branch intentionally contains only
+the introductory README, so add the module from the `develop` branch:
 
 ```sh
 go get github.com/MahdiPezeshkian/Onyx.Data@develop
 ```
 
-Once a tagged release is published, prefer the tagged version
-(`go get github.com/MahdiPezeshkian/Onyx.Data@vX.Y.Z`). Until then, pin a
-pseudo-version produced by `go get` so your builds are reproducible.
+`go get` resolves `@develop` to a pseudo-version and records it in your `go.mod`,
+so builds stay reproducible until you update them. Once a tagged release is
+published, prefer the tagged version instead
+(`go get github.com/MahdiPezeshkian/Onyx.Data@vX.Y.Z`).
 
 ## Minimal usage
 

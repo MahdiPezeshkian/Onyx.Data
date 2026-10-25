@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.iml
+
+# Compiled binaries and build output
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/build/
+/dist/
+
+# Coverage and profiling output
+*.cover
+coverage.txt
+coverage.out
+*.prof
+
+# Go workspace and vendoring state
+go.work
+go.work.sum
+/vendor/
+
+# Local configuration, environment files, and secrets
+*.env
+.env
+.env.*
+!.env.example
+*.local
+*.local.*
+config.local.*
+secrets.*
+*.pem
+*.key
+
+# Local databases and data files
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Test and tooling scratch files
+/tmp/
+.tmp/
